@@ -71,7 +71,7 @@ void loop()
   buf += String("<div><h4>Temperatura</h4>")+ temp + " *C</div>";
   buf += String("<div><h4>Umidade</h4>")+ um +" %</div>";
  
-  buf += "<h4>Som Livre</h4>";
+  buf += "<h4>Monitor Web</h4>";
    buf += "</html>\n";
   //Sends the response to the client.
   client.print(buf);
