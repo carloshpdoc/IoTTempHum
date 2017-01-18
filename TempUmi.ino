@@ -59,7 +59,7 @@ void loop()
   um = dht.readHumidity();
   temp= dht.readTemperature();
   
-  //Resposta para o cliente
+  //Response to the client
   String buf = "";
   buf += "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE HTML>\r\n";
   buf += "<html lang=\"en\"><head><meta http-equiv=\"refresh\" content=\"2\" name=\"viewport\" content=\"width=device-width, initial-scale=1, user-scalable=no\"/>\r\n";
@@ -73,7 +73,7 @@ void loop()
  
   buf += "<h4>Som Livre</h4>";
    buf += "</html>\n";
-  //Envia a resposta para o cliente
+  //Sends the response to the client.
   client.print(buf);
   client.flush();
   client.stop();
